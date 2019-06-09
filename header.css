@@ -1,0 +1,180 @@
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arical,"Microsoft Yahei UI","Microsoft YaHei",SimHei,"\5B8B\4F53",simsun,sans-serif;
+    color: #666;
+}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.navbar-header .logo {
+    padding-top: 8px;
+}
+.navbar-form input{
+    background: rgba(255, 247, 247, 0.28);
+    color: #ddd;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ccc;
+}
+#navbar-collapse {
+    border: 0;
+    box-shadow: none;
+}
+#navbar-collapse .nav-product  {
+    position: static;
+}
+.nav-product>div {
+    width: 100%;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+}
+.nav-product>div a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+.dropdown-product {
+    background-color: rgba(58, 57, 57, 0.5);
+    display: none;
+}
+#navbar-collapse .dropdown-product a {
+    color: #fff;
+    float: left;
+    padding: 10px 20px;
+}
+.dropdown-product a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.dropdown-shop {
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+}
+.dropdown-shop .col-sm-3 a{
+    border-right: 1px solid #ccc;
+    margin: 20px 0;
+    position: relative;
+}
+.dropdown-shop a.dropdown-shop-gm {
+    border-right: none;
+}
+.dropdown-shop p {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -60px;
+}
+.dropdown-shop img {
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.dropdown-shop img:hover {
+    -webkit-animation: 1s logoMove;
+}
+@-webkit-keyframes logoMove {
+    50% {
+        margin-left: -8px;
+    }
+    75% {
+        margin-top: -8px;
+    }
+}
+
+/* 小屏幕（平板，大于等于768px） */
+@media (min-width: 768px) {
+    .navbar .navbar-nav>li>a{
+        padding: 15px 7px;
+    }
+    #navbar-collapse .dropdown-product a {
+        padding: 10px;
+    }
+    #navbar-collapse .dropdown-product a {
+        padding: 10px;
+    }
+    .navbar-right {
+        margin-right: 0;
+    }
+    .dropdown-product img {
+        width: 60px;
+    }
+    .dropdown-product .container {
+        width: 700px;
+    }
+    .dropdown-shop img {
+        width: 95%;
+    }
+    .dropdown-shop p {
+        top: 60px;
+    }
+    .dropdown-shop {
+        height: 120px;
+        font-size: 15px;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 992px) {
+    .navbar {
+        border-bottom: 1px solid #464444;
+    }
+    .navbar .navbar-nav>li>a{
+        padding: 15px 7px;
+    }
+    .navbar .navbar-form {
+        padding-left: 50px;
+    }
+    .dropdown-product .container {
+        width: 940px;
+    }
+    #navbar-collapse .dropdown-product a {
+        padding: 10px 13px;
+    }
+    #navbar-collapse>ul {
+        padding-right: 30px;
+    }
+    .dropdown-product img {
+        width: 80px;
+    }
+    .dropdown-shop {
+        height: 150px;
+    }
+    .dropdown-shop p {
+        font-size: 16px;
+        top: 85px;
+    }
+}
+
+/* 大屏幕（PC端，大于等于1200px） */
+@media (min-width: 1200px) {
+    .navbar {
+        border-bottom: 1px solid #464444;
+    }
+    #navbar-collapse li {
+        margin: 0 7px;
+    }
+    .navbar .navbar-form {
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+    .dropdown-product .container {
+        width: 1100px;
+    }
+    .dropdown-product img {
+        width: 100px;
+    }
+    .dropdown-shop {
+        height: 170px;
+    }
+    .dropdown-shop p {
+        top: 100px;
+    }
+}
+@media (min-width: 820px) and (max-width: 980px) {
+    .navbar-inverse>.container {
+        width: 800px;
+    }
+}
