@@ -1,0 +1,153 @@
+/*清空某些元素自带的内外边距*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*导航栏样式属性*/
+.tenda_header>.tenda_header_tou{
+    position: relative;
+    background:#fff !important;
+    width:100%;
+    height:54px;
+}
+/*调整在中屏以下导航栏的背景颜色*/
+@media screen and (max-width:767px)  {
+    .tenda_header>.tenda_header_tou{
+        background:#000 !important;
+    }
+    /*设置logo图片居中显示*/
+    .tenda_header_logo{
+        float:left;
+        display: block;
+        margin: auto;
+    }
+    /*在中屏时将区域语言隐藏*/
+    .my_nbsp_fade {
+        display: none;
+    }
+    /*以及点击折叠按钮时,ul 的变化*/
+    .tanda_navbar_nav{
+        position: absolute;
+        left:0;
+        top: 48px;
+        background: #000;
+        width: 100%;
+        height: 100%;
+        padding: 0 48px;
+        min-height: 650px;
+    }
+    /*设置中屏时,每个li的下边框 上下内边距*/
+    .tanda_navbar_nav li a{
+        padding: 15px 0;
+        font-size: 16px;
+        border-bottom: 1px solid #555;
+    }
+    /*修改 icon-icon_selectDownArrow: 在中屏时的样式*/
+    .icon-icon_selectDownArrow:before {
+        content: "\e61d";
+        padding-left: 31.5rem;
+    }
+    /*修改icon-down4 在中屏时的样式*/
+    .icon-down4:before {
+        content: "\e6f7";
+        padding-left: 29.5rem;
+    }
+
+}
+/*调整logo图片在大屏时的位置*/
+@media screen and (min-width:992px) {
+    .icon-icon_selectDownArrow:before{
+        display: none;
+    }
+    /*调整大屏时logo图片的位置*/
+    .tenda_header_logo{
+        position: absolute;
+        left:10%;
+    }
+    /*设置在大屏以上logo图片鼠标点击时的变化*/
+    .tenda_header_logo:hover{
+        background:#f1b0b7;
+    }
+
+}
+/*设置导航页ul的位置  */
+.tanda_navbar_nav{
+    position: absolute;
+    left:27%;
+}
+/*设置在超大屏时a标签内边距的变化*/
+@media screen and (min-width:1100px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding: 0 1.6rem;
+        color: #333;
+    }
+}
+/*设置在中屏时ul的left 为0*/
+@media screen and (max-width:767px){
+    .tanda_navbar_nav{
+        position: absolute;
+        left:0;
+    }
+}
+/*区域语言的定位*/
+.header_language{
+    position: absolute;
+    left:80%;
+    top:1rem;
+}
+/*区域语言的字体大小以及颜色*/
+.header_language li a{
+    font-size:16px;
+    color:#333;
+}
+/*放大镜隔小地球的距离*/
+.header_language:first-child>li{
+    margin-left:15px;
+}
+/*设置 家用商品以及商用产品的样式*/
+.header_down {
+    position: relative;
+    width:100%;
+    height:250px;
+    padding-left:0;
+    padding-right: 0;
+}
+.header_down_col1{
+    position: absolute;
+    width:100%;
+    height:250px;
+    background:#ededed;
+}
+.header_down_col1>ul{
+    position: absolute;
+    top:5rem;
+    left: 5%;
+}
+.header_down_col1>ul li {
+    padding:0 25px;
+}
+.header_down_col2{
+    width:100%;
+    height:250px;
+    background:#e8e8e8;
+    position: absolute;
+    top:0rem;
+    left: 75%;
+}
+.header_down_col2>ul{
+    padding-left:20px;
+}
+.header_down_col2>ul li{
+    padding-top:8px;
+}
+.header_down_col2>ul>li h5{
+    padding-top:20px;
+}
+@media screen and (max-width:767px){
+    .header_down_col1{
+        display:none;
+    }
+    .header_down_col2{
+        display:none;
+    }
+}
