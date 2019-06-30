@@ -1,0 +1,279 @@
+*{
+    margin:0;padding:0;
+}
+/*轮播图的左按钮*/
+.carousel-control-prev{
+    width:3% !important;
+    height: 10% !important;
+    top: 45% !important;
+    border-bottom-right-radius:50%;
+    border-top-right-radius:50%;
+    background:#666;
+}
+/*轮播图的右按钮*/
+.carousel-control-next{
+    width:3% !important;
+    height: 10% !important;
+    top: 45% !important;
+    border-bottom-left-radius:50%;
+    border-top-left-radius:50%;
+    background:#666;
+}
+.carousel-indicators li{
+    width:40px !important;
+    height:5px !important;
+    margin:0 5px !important;
+}
+    /*调整轮播图全屏时,图一的样式详情*/
+.my_lunbo{
+    position: relative;
+}
+.card{
+    position: absolute !important;
+    background: transparent !important;
+    border:none !important;
+    top: 3.5%;
+    left:38%;
+}
+.card>h4{
+    color:#ddd;
+}
+.card>h2{
+    color:#fd4f00;
+}
+.card>p{
+    color:#ddd;
+}
+/*调整轮播图全屏时,图三的样式详情*/
+.my_lunbo3{
+    position: relative;
+}
+.card1{
+    position: absolute;
+    top: 31%;
+    left:60%;
+}
+.card1>h2{
+    color:#fd4f00;
+}
+/*调整轮播图全屏时,图四的样式详情*/
+.my_lunbo4{
+    position: relative;
+}
+.card2{
+    top: 2.5%;
+    left:36.5%;
+}
+.card2>h4{
+    color:#333;
+}
+.card2>p{
+    color:#333;
+}
+/*调整轮播图,图片详情在大屏和超大屏之间的位置*/
+@media screen and (min-width:992px) and (max-width:1295px) {
+    .card{
+        top: 3.5%;
+        left:40%;
+    }
+    .card>h4{
+        font-size:16px;
+    }
+    .card>h2{
+        font-size:20px;
+    }
+    .card>p{
+        font-size:12px;
+    }
+    .card1 {
+        position: absolute;
+        top: 31%;
+        left: 60%;
+    }
+}
+/*调整轮播图,图片详情在中屏和大屏之间的位置*/
+@media screen and (min-width:768px) and (max-width:991px)  {
+    .card{
+        top: 3%;
+        left:36%;
+    }
+    .card>h4{
+        font-size:16px;
+    }
+    .card>h2{
+        font-size:20px;
+    }
+    .card>p{
+           font-size:12px;
+       }
+    .card1{
+        position: absolute;
+        top: 31%;
+        left:60%;
+    }
+}
+/*调整轮播图,图片详情在小屏以下的位置*/
+@media screen and (max-width:767px){
+    .card{
+        top: 3%;
+        left:33.5%;
+    }
+    .card>h4{
+        font-size:12px;
+    }
+    .card>h2{
+        font-size:16px;
+    }
+    .card>p{
+        font-size:10px;
+    }
+    .card1{
+        position: absolute;
+        top: 31%;
+        left:60%;
+    }
+}
+@media screen and (max-width:500px){
+    .img_navbar{
+        display: none !important;
+    }
+
+}
+/*图片导航页的图片和详情*/
+.img_navbar{
+    background: #f8f8f8;
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    height:143px;
+}
+/*调整图片导航栏的3张图片的边距*/
+.my_navbar_img ,.my_navbar_img1,.my_navbar_img2{
+    padding:3px 15px 0 15px;
+}
+/*调整图片详情的位置*/
+.my_font_details,.my_font_details1,.my_font_details2 {
+    color: #222222;
+    display: block;
+    position: absolute;
+    top:1%;
+    left:32%;
+    padding-right:30px;
+}
+/*修改p标签的字体大小*/
+.my_font_details,.my_font_details1,.my_font_details2>p{
+    font-size:14px;
+}
+/*为.my_font_details,.my_font_details1 加上右边框*/
+.my_font_details,.my_font_details1{
+    border-right:1px solid #666;
+}
+/*调整在大屏时图片的位置*/
+@media screen and (max-width:992px){
+    .my_navbar_img,.my_navbar_img1,.my_navbar_img2 {
+        display: none;
+    }
+}
+/*设置下方6张图片的共同样式*/
+.mw5,.mw3, .AC11,.W15E,.TEF1109D,.O5,.W6-S{
+    display: block;
+    clear: both;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    padding-top: 100PX;
+    background:#2f2e37;
+}
+/*/*设置下方6张图片的共同样式*/
+.new_mw5,.new_mw3,.new_AC11,.new_W15E,.new_TEF1109D,.new_O5,.new_W6-S{
+    font-size: 13px;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #fd4f00;
+    color: #fff;
+    font-weight: 400;
+    line-height: 18px;
+    height: 18px;
+    padding: 0 7px 1px;
+}
+
+.mw5_title,.mw3_title,.AC11_title,.W15E_title,.TEF1109D_title,.O5_title,.W6-S_title{
+    display: block;
+    font-size: 3em;
+    color:#ddd;
+}
+
+.mw5_datails,.mw3_datails,.AC11_datails,.W15E_datails,.TEF1109D_datails ,.O5_datails, .W6-S_datails{
+    font-size:30px;
+    color:#ddd;
+}
+
+.mw5_href>a,.mw3_href>a,.AC11_href>a,.W15E_href>a,.TEF1109D_href>a,.O5_href>a,.W6-S_href>a{
+    color:#ddd;
+    font-size:16px;
+}
+.my_mw5_div,.my_mw3_div,.my_AC11_div,.my_W15E_div,.my_TEF1109D_div,.my_O5_div,.my_W6-S_div{
+    width:100%;
+    text-align: center;
+    background-image:linear-gradient(to bottom,#2f2e37,#c0c0c2);
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+
+.my_mw5_img ,.my_mw3_img,.my_AC11_img,.my_W15E_img,.my_TEF1109D_img {
+    width:70%;
+}
+/*单独更改样式*/
+.AC11{
+    background:#6f7a81 ;
+}
+/*单独更改样式*/
+.my_AC11_div{
+    background-image:linear-gradient(to bottom,#6f7a81,#e4e6e7);
+}
+/*单独更改样式*/
+.W15E{
+    background: #7e7e7e;
+}
+/*单独更改样式*/
+.my_W15E_div{
+    background-image:linear-gradient(to bottom,#7e7e7e,#969696);
+}
+/*单独更改样式*/
+.TEF1109D{
+    background:#2a2f34;
+}
+
+
+
+.my_TEF1109D_div{
+
+    background-image:linear-gradient(to bottom,#2a2f34,#7f8388);
+
+}
+
+.W6-S{
+    background:#363b3f;
+}
+
+
+.my_W6-S_div{
+    background-image:linear-gradient(to bottom,#363b3f,#b5babd);
+}
+.my_W6-S_img {
+    width:40%;
+}
+
+.O5{
+    background:#d1b599;
+}
+.my_O5_div{
+    background-image:linear-gradient(to bottom,#d1b599,#a6a6a7);
+}
+
+.my_O5_img {
+    width:40%;
+}
+

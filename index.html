@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- 1.设置视口-->
+    <meta name="viewport" content="width=device-width,initial">
+    <!-- 2.导入css文件-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <!-- 3.导入js文件,有先后顺序-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<header></header>
+<body>
+<div id="container">
+    <!-- 轮播图-->
+    <div id="mycarousel" class="carousel" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- 图一,图片和详情-->
+            <div class="carousel-item active">
+                <img  class="w-100 my_lunbo" src="images/lunbo1.jpg" alt=""/>
+                <div class="card">
+                    <h4 class="text-center">W15E</h4>
+                    <h2>性能新升级 企网专业范儿</h2>
+                    <p class="text-center">1200M 11AC双频无线路由器</p>
+                </div>
+            </div>
+            <!-- 图二,图片和详情-->
+            <div class="carousel-item">
+                <img class="w-100" src="images/lunbo2.jpg" alt=""/>
+            </div>
+            <!-- 图三,图片和详情-->
+            <div class="carousel-item">
+                <img class="w-100 my_lunbo3" src="images/lunbo3.jpg" alt=""/>
+                <div class="card card1">
+                    <h4 class="text-center">11AC双频无线路由器</h4>
+                    <h2>穿墙路由 信号好快</h2>
+                    <p class="text-center">双频并发 多穿一堵墙</p>
+                </div>
+            </div>
+            <!-- 图四,图片和详情-->
+            <div class="carousel-item">
+                <img class="w-100 my_lunbo4" src="images/lunbo4.jpg" alt=""/>
+                <div class="card card2">
+                    <h4 class="text-center">MW5  AC1200双频千兆穿墙路由器</h4>
+                    <h2>穿墙技术强 覆盖多间房</h2>
+                    <p class="text-center">200兆以上光纤大户型专用</p>
+                </div>
+            </div>
+            <!-- 左右箭头按钮-->
+            <a href="#mycarousel" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#mycarousel" data-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <!-- 图片轮播按钮-->
+            <ul class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+                <li data-target="#mycarousel" data-slide-to="3"></li>
+            </ul>
+        </div>
+    </div>
+    <!--图片导航页-->
+    <div class="img_navbar">
+        <div class="container">
+            <div class="row">
+                <!-- 互联家庭-->
+                <div class="col-sm-4 border_right1">
+                    <img class="my_navbar_img" src="images/for11.jpg" alt=""/>
+                    <div class="my_font_details">
+                        <h5>互联家庭</h5>
+                        <p>智能、快速、稳定, 连接未来科技，开启智能生活方式</p>
+                        <span class="iconfont icon-rightarrowpx"></span>
+                    </div>
+                </div>
+                <!-- 企业组网系列图片文字-->
+                <div class="col-sm-4 border_right1">
+                    <img class="my_navbar_img1" src="images/for3.jpg" alt=""/>
+                    <div class="my_font_details1">
+                        <h5>企业组网</h5>
+                        <p>强信号覆盖和带机能力,满足办公、学校及商场等环境</p>
+                        <span class="iconfont icon-rightarrowpx"></span>
+                    </div>
+                </div>
+                <!-- 解决方案图片-->
+                <div class="col-sm-4">
+                    <img class="my_navbar_img2" src="images/for4.jpg" alt=""/>
+                    <div class="my_font_details2 ">
+                        <h5>解决方案</h5>
+                        <p>为中小型企业的灵活、可扩展解决方案提供集成组件</p>
+                        <span class="iconfont icon-rightarrowpx"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MW5 产品页-->
+    <div class="mw5">
+        <!-- 全新新品-->
+        <a href="#" class="new_mw5">全新产品</a>
+        <!-- mw5标题-->
+        <h2 class="mw5_title">MW5</h2>
+        <!-- mw5详情-->
+        <p class="mw5_datails">穿墙技术强  覆盖多间房</p>
+        <!-- mw5外部链接-->
+        <div class="mw5_href">
+            <a href="#">
+                <span>了解 MW5</span>
+            </a>
+        </div>
+    </div>
+    <!--mw5 的图片介绍-->
+    <div class="my_mw5_div">
+        <a href="#">
+            <img class="my_mw5_img" src="images/20191291143488371.png" alt=""/>
+        </a>
+    </div>
+    <!--MW3 产品页-->
+    <div class="mw3">
+        <!--MW3 全新新品-->
+        <a href="#" class="new_mw3">全新产品</a>
+        <!-- mw3标题-->
+        <h2 class="mw3_title">NW3</h2>
+        <!-- mw3详情-->
+        <p class="mw3_datails">免布线自组网 信号覆盖每间房</p>
+        <!-- mw3外部链接-->
+        <div class="mw3_href">
+            <a href="#">
+                <span>了解 NW3</span>
+            </a>
+        </div>
+    </div>
+    <!--mw3 的图片介绍-->
+    <div class="my_mw3_div">
+        <a href="#">
+            <img class="my_mw3_img" src="images/20191291144243155.png" alt=""/>
+        </a>
+    </div>
+    <!--AC11产品页-->
+    <div class="AC11">
+        <!--AC11全新新品-->
+        <a href="#" class="new_AC11">全新产品</a>
+        <!-- AC11标题-->
+        <h2 class="AC11_title">AC11</h2>
+        <!-- AC11详情-->
+        <p class="AC11_datails">强劲五天线 多穿一堵墙</p>
+        <!-- AC11外部链接-->
+        <div class="AC11_href">
+            <a href="#">
+                <span>了解 AC11</span>
+            </a>
+        </div>
+    </div>
+    <!--AC11_ 的图片介绍-->
+    <div class="my_AC11_div">
+        <a href="#">
+            <img class="my_AC11_img" src="images/2019129114483815.png" alt=""/>
+        </a>
+    </div>
+    <!--W15E产品页-->
+    <div class="W15E">
+        <!--W15E全新新品-->
+        <a href="#" class="new_W15E">全新新品</a>
+        <!-- W15E标题-->
+        <h2 class="W15E_title">W15E</h2>
+        <!-- W15E详情-->
+        <p class="W15E_datails">1200M 11AC双频无线路由器</p>
+        <!-- W15E外部链接-->
+        <div class="W15E_href">
+            <a href="#">
+                <span>了解 W15E</span>
+            </a>
+        </div>
+    </div>
+    <!--W15E_ 的图片介绍-->
+    <div class="my_W15E_div">
+        <a href="#">
+            <img class="my_W15E_img" src="images/w15.png" alt=""/>
+        </a>
+    </div>
+    <!--TEF1109D产品页-->
+    <div class="TEF1109D">
+        <!--TEF1109D全新新品-->
+        <a href="#" class="new_TEF1109D">全新新品</a>
+        <!-- TEF1109D标题-->
+        <h2 class="W15E_title">TEF1109D</h2>
+        <!-- TEF1109D详情-->
+        <p class="TEF1109D_datails">为高清监控而生，专为中小型监控设计</p>
+        <!--TEF1109D外部链接-->
+        <div class="TEF1109D_href">
+            <a href="#">
+                <span>了解 TEF1109D</span>
+            </a>
+        </div>
+    </div>
+    <!--TEF1109D_ 的图片介绍-->
+    <div class="my_TEF1109D_div">
+        <a href="#">
+            <img class="my_TEF1109D_img" src="images/20191291141259007.png" alt=""/>
+        </a>
+    </div>
+    <!--W6-S_产品页-->
+    <div class="W6-S">
+        <!--W6-S全新新品-->
+        <a href="#" class="new_W6-S">全新新品</a>
+        <!-- W6-S标题-->
+        <h2 class="W6-S_title">W6-S</h2>
+        <!-- W6-S详情-->
+        <p class="W6-S_datails">完美覆盖2间房 酒店、别墅、大户型专用</p>
+        <!--W6-S外部链接-->
+        <div class="W6-S_href">
+            <a href="#">
+                <span>了解 W6-S</span>
+            </a>
+        </div>
+    </div>
+    <!--W6-S__ 的图片介绍-->
+    <div class="my_W6-S_div">
+        <a href="#">
+            <img class="my_W6-S_img" src="images/20191291141567472.png" alt=""/>
+        </a>
+    </div>
+    <!--O5产品页-->
+    <div class="O5">
+        <!--O5全新新品-->
+        <a href="#" class="new_O5">全新新品</a>
+        <!-- O5标题-->
+        <h2 class="O5_title">O5</h2>
+        <!-- O5详情-->
+        <p class="O5_datails">完美覆盖2间房 酒店、别墅、大户型专用</p>
+        <!--O5外部链接-->
+        <div class="O5_href">
+            <a href="#">
+                <span>了解 O5</span>
+            </a>
+        </div>
+    </div>
+    <!--O5_ 的图片介绍-->
+    <div class="my_O5_div">
+        <a href="#">
+            <img class="my_O5_img" src="images/20191291142307684.png" alt=""/>
+        </a>
+    </div>
+</div>
+<footer></footer>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

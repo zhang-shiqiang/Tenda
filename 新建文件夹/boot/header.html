@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tanda</title>
+    <!-- 1.设置视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 2.导入css文件-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <!-- 导入字体图标库-->
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="./favicon.ico"/>
+    <!-- 3.导入js文件,有先后顺序-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="container" class="tenda_header">
+    <!-- 头部导航栏-->
+    <!-- 在祖先元素设置navbar-expand-->
+    <div class="navbar navbar-expand-md bg-dark navbar-dark tenda_header_tou">
+        <!-- 该button在中屏时显示,并且导航栏纵向排列-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tendaContent">
+            <!--设置折叠的三条小横线 -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 插入logo图片-->
+        <a href="javascript:;" class="tenda_header_logo">
+            <img src="images/logoy.png" alt=""/>
+        </a>
+        <!-- 为 折叠导航栏按钮设置点击事件-->
+        <div id="tendaContent" class="collapse navbar-collapse tendaContent_nav">
+            <!-- 该ul包含 小放大镜以及小小地球a标签-->
+            <ul class="list-unstyled d-flex header_language">
+                <li>
+                    <a href="#" class="iconfont icon-search2"></a>
+                </li>
+                <li class="my_nbsp_fade">
+                    <a href="#" class="iconfont icon-global1">&nbsp;区域/语言</a>
+                </li>
+            </ul>
+            <!--该 ul 包含商品列表-->
+            <ul class="navbar-nav tanda_navbar_nav">
+                <li class="nav-item" id="jia" >
+                    <a href="#" class="nav-link">
+                        <span>智能家用产品
+                            <b class="iconfont icon-down4"></b>
+                        </span>
+                    </a>
+                    <ul class="list-unstyled jia_list child-li" style="display:none;">
+                        <li>
+                            <a href="#">穿墙宝</a>
+                        </li>
+                        <li>
+                            <a href="#">路由器</a>
+                        </li>
+                        <li>
+                            <a href="#">无线网卡</a>
+                        </li>
+                        <li>
+                            <a href="#">交换机</a>
+                        </li>
+                        <li>
+                            <a href="#">电力线</a>
+                        </li>
+                        <li>
+                            <a href="#">信号放大器</a>
+                        </li>
+                        <li>
+                            <a href="#">接入终端</a>
+                        </li>
+                        <li>
+                            <a href="#">网络摄像机</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item child-li" id="shan">
+                    <a href="#" class="nav-link">
+                        <span>企业商用网络
+                            <b class="iconfont icon-down4"></b>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item child-li">
+                    <a href="#" class="nav-link">
+                        <span>服务支持
+                            <b class="iconfont icon-icon_selectDownArrow"></b>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item child-li">
+                    <a href="#" class="nav-link">
+                        <span>解决方案
+                            <b class="iconfont icon-icon_selectDownArrow"></b>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item child-li">
+                    <a href="#" class="nav-link">
+                        <span>如何购买
+                            <b class="iconfont icon-icon_selectDownArrow"></b>
+                        </span>
+                    </a>
+
+                </li>
+                <li class="nav-item child-li">
+                    <a href="#" class="nav-link">
+                        <span>走进腾达
+                            <b class="iconfont icon-icon_selectDownArrow"></b>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 智能家用产品下的商品列表-->
+    <div id="content" class="container-fluid header_down" style="display: none">
+        <div class="row mx-0">
+            <div class="col-9 header_down_col1">
+                <ul class="d-flex list-unstyled">
+                    <li>
+                        <a href="#">
+                            <img src="images/151.png" alt=""/>
+                        </a>
+                        <p>穿墙宝</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/155.png" alt=""/>
+                        </a>
+                        <p>路由器</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/158.png" alt=""/>
+                        </a>
+                        <p>无线网卡</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/170.png" alt=""/>
+                        </a>
+                        <p>交换机</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/207.png" alt=""/>
+                        </a>
+                        <p>电力线</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/173.png" alt=""/>
+                        </a>
+                        <p>信号放大器</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/176.png" alt=""/>
+                        </a>
+                        <p>接入终端</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/197.png" alt=""/>
+                        </a>
+                        <p>网络摄像机</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 header_down_col2">
+                <ul class="list-unstyled">
+                    <li><h5>服务支持</h5></li>
+                    <li>在线客服</li>
+                    <li>维修网点</li>
+                    <li>软件下载</li>
+                    <li>帮助文档</li>
+                    <li>视频中心</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 企业商用产品下的商品列表-->
+    <div id="content2" class="container-fluid header_down" style="display: none">
+        <div class="row mx-0">
+            <div class="col-9 px-0 header_down_col1">
+                <ul class="d-flex list-unstyled">
+                    <li>
+                        <a href="#">
+                            <img src="images/189.png" alt=""/>
+                        </a>
+                        <p>企业交换机</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/186.png" alt=""/>
+                        </a>
+                        <p>企业无线AP</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/201.png" alt=""/>
+                        </a>
+                        <p>企业路由器</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/208.png" alt=""/>
+                        </a>
+                        <p>室外网桥&基站</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/169.png" alt=""/>
+                        </a>
+                        <p>AP控制器</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/204.png" alt=""/>
+                        </a>
+                        <p>综合类</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/123.png" alt=""/>
+                        </a>
+                        <p>智能推荐</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 px-0 header_down_col2">
+                <ul class="list-unstyled">
+                    <li><h5>服务支持</h5></li>
+                    <li>在线客服</li>
+                    <li>维修网点</li>
+                    <li>软件下载</li>
+                    <li>帮助文档</li>
+                    <li>视频中心</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    /*Created by shiqiang on 2019/6/28. */
+    //家用产品的鼠标移入移出事件
+    $(document).ready(function() {
+        $("#jia").mouseenter(function() {
+            $("#content").toggle();
+        });
+    });
+    //商用产品的鼠标移入移出事件
+    $(document).ready(function() {
+        $("#shan").mouseenter(function() {
+            $("#content2").toggle();
+        });
+    });
+</script>
+</body>
+</html>
